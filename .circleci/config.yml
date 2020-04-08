@@ -37,6 +37,7 @@ jobs: # A basic unit of work in a run
       - run:
           name: Deploy binaries
           command: |
+            mkdir ~/binaries/bin/
             cd Tasmota/build_output/firmware
             cp * ~/binaries/bin/
             cd ~/binaries
