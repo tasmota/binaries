@@ -11,10 +11,6 @@ workflows:
     triggers: #use the triggers key to indicate a scheduled build
       - schedule:
           cron: "0 0 6 * *" # use cron syntax to set the schedule
-          filters:
-            branches:
-              only:
-                - master
     jobs:
       - build
 
@@ -61,5 +57,5 @@ jobs: # A basic unit of work in a run
             git config user.name "$USER_NAME"
             git config user.email "$USER_EMAIL"
             git add --all
-            git commit --allow-empty -m "Binaries from $CIRCLE_BUILD_URL"
+            git commit --allow-empty -m "Binaries Circle#$CIRCLE_BUILD_NUM [ci skip]"
             git push 
