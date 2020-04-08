@@ -33,10 +33,15 @@ jobs: # A basic unit of work in a run
             cd Tasmota
             . ../venv/bin/activate
             pio run
-    # deploy:
-    #   steps:
-    #     - checkout
-    #     - run:
-    #         name: Deploy Binaries
-    #         command: |
-    #           git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git master
+      - run: ls -al
+      - run:
+          name: Deploy binaries
+          command: |
+            cd build_output/firmware
+            cp * ~/src/*
+            cd ~
+            git config user.name "$USER_NAME"
+            git config user.email "$USER_EMAIL"
+            git add --all
+            git commit --allow-empty -m "Binaries from $CIRCLE_BUILD_URL"
+            git push 
