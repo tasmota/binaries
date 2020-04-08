@@ -19,7 +19,7 @@ workflows:
       - build
 
 jobs: # A basic unit of work in a run
-  build: # runs not using Workflows must have a `build` job as entry point 
+  build: # runs not using Workflows must have a `build` job as entry point
     # directory where steps are run
     working_directory: ~/binaries
     docker: # run the steps with Docker
