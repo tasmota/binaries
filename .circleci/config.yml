@@ -22,7 +22,7 @@ jobs: # A basic unit of work in a run
       - run: ls -al
       - run:
           name: Copy overrides
-          command: cp platformio_override.ini $CIRCLE_WORKING_DIRECTORY/Tasmota/platformio_override.ini && cp user_config_override.h $CIRCLE_WORKING_DIRECTORY/Tasmota/tasmota/user_config_override.h
+          command: cp platformio_override.ini Tasmota/platformio_override.ini && cp user_config_override.h Tasmota/tasmota/user_config_override.h
       - save_cache:
           key: deps1-{{ .Branch }}-{{ checksum "requirements.txt" }}
           paths:
