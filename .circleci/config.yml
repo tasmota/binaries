@@ -27,6 +27,9 @@ jobs: # A basic unit of work in a run
           key: deps1-{{ .Branch }}-{{ checksum "requirements.txt" }}
           paths:
             - "venv"
+      - run:
+          name: Compile
+          command: cd Tasmota && pio run
     # deploy:
     #   steps:
     #     - checkout
