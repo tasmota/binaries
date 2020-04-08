@@ -37,8 +37,8 @@ jobs: # A basic unit of work in a run
       - run:
           name: Deploy binaries
           command: |
-            cd build_output/firmware
-            cp * ~/src/*
+            cd Tasmota/build_output/firmware
+            cp * ~/bin/*
             cd ~
             git config user.name "$USER_NAME"
             git config user.email "$USER_EMAIL"
