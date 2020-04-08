@@ -21,7 +21,7 @@ jobs: # A basic unit of work in a run
           command: git clone --branch=development --depth=1 "https://github.com/arendst/Tasmota.git" binaries
       - run:
           name: Copy overrides
-          command: cp platformio_override.ini binaries/Tasmota && cp user_config_override.h binaries/Tasmota/tasnota
+          command: cp $CIRCLE_WORKING_DIRECTORY/platformio_override.ini $CIRCLE_WORKING_DIRECTORY/Tasmota && cp $CIRCLE_WORKING_DIRECTORY/user_config_override.h $CIRCLE_WORKING_DIRECTORY/Tasmota/tasnota
       - save_cache:
           key: deps1-{{ .Branch }}-{{ checksum "requirements.txt" }}
           paths:
