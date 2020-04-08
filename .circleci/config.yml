@@ -20,10 +20,10 @@ jobs: # A basic unit of work in a run
           key: deps1-{{ .Branch }}-{{ checksum "requirements.txt" }}
           paths:
             - "venv"
-  deploy:
-    steps:
-      - checkout
-      - run:
-          name: Deploy Binaries
-          command: |
-            git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git master
+    # deploy:
+    #   steps:
+    #     - checkout
+    #     - run:
+    #         name: Deploy Binaries
+    #         command: |
+    #           git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git master
