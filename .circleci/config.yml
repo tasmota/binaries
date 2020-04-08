@@ -41,8 +41,8 @@ jobs: # A basic unit of work in a run
             cd Tasmota/build_output/firmware
             cp * ~/binaries/bin/
             cd ~/binaries
-            git config user.name "$USER_NAME"
-            git config user.email "$USER_EMAIL"
+            # git config user.name "$USER_NAME"
+            # git config user.email "$USER_EMAIL"
             git add --all
             git commit --allow-empty -m "Binaries from $CIRCLE_BUILD_URL"
             git push 
