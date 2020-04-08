@@ -12,9 +12,8 @@ workflows:
       - schedule:
           cron: "0 0 6 * *" # use cron syntax to set the schedule
           filters:
-            # branches:
-            #   only:
-            #     - master
+            branches:
+              only: master
     jobs:
       - build
 
