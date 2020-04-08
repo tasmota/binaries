@@ -564,7 +564,7 @@
     #define SUNRISE_DAWN_ANGLE DAWN_NORMAL       // Select desired Dawn Angle from (DAWN_NORMAL, DAWN_CIVIL, DAWN_NAUTIC, DAWN_ASTRONOMIC)
 
 #define USE_SCRIPT                               // Add support for script (+17k code)
-  #define USE_SCRIPT_FATFS 4                     // Script: Add FAT FileSystem Support
+  // #define USE_SCRIPT_FATFS 4                     // Script: Add FAT FileSystem Support
 
 // -- Optional modules ----------------------------
 //#define ROTARY_V1                                // Add support for MI Desk Lamp
