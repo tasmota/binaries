@@ -1,2 +1,0 @@
-.pio
-.clang_complete
