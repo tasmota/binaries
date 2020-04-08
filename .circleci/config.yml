@@ -10,7 +10,6 @@ jobs: # A basic unit of work in a run
       - checkout
       - restore_cache:
           key: deps1-{{ .Branch }}-{{ checksum "requirements.txt" }}      
-      - run: ls -al
       - run:
           name: Install Python deps in a venv
           command: |
@@ -22,7 +21,8 @@ jobs: # A basic unit of work in a run
           command: git clone --branch=development --depth=1 "https://github.com/arendst/Tasmota.git" 
       - run:
           name: Copy overrides
-          command: cp $CIRCLE_WORKING_DIRECTORY/platformio_override.ini $CIRCLE_WORKING_DIRECTORY/Tasmota && cp $CIRCLE_WORKING_DIRECTORY/user_config_override.h $CIRCLE_WORKING_DIRECTORY/Tasmota/tasnota
+          command: cp platformio_override.ini $CIRCLE_WORKING_DIRECTORY/Tasmota && cp žuser_config_override.h $CIRCLE_WORKING_DIRECTORY/Tasmota/tasnota
+      - run: ls -al
       - save_cache:
           key: deps1-{{ .Branch }}-{{ checksum "requirements.txt" }}
           paths:
