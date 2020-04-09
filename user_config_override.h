@@ -513,6 +513,8 @@
 #define WIFI_SCAN_REGULARLY    false             // [SetOption57] Scan wifi network every 44 minutes for configured AP's
 #undef APP_DISABLE_POWERCYCLE
 #define APP_DISABLE_POWERCYCLE true             // [SetOption65] Disable fast power cycle detection for device reset
+#undef MQTT_TUYA_RECEIVED
+#define MQTT_TUYA_RECEIVED     true             // [SetOption66] Enable TuyaMcuReceived messages over Mqtt
 
 #undef OTA_URL
 #define OTA_URL                "do not use OTA update"  // [OtaUrl]
@@ -524,7 +526,7 @@
   #define USE_JAVASCRIPT_ES6                     // Enable ECMAScript6 syntax using less JavaScript code bytes (fails on IE11)
 
 #define USE_RULES                                // Add support for rules (+4k4 code)
-#define USE_TUYAMCU
+#define USE_TUYA_MCU                             // Add support for Tuya Serial MCU
 
 #define USE_DEEPSLEEP                            // Add support for deepsleep (+1k code)
 
