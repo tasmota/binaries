@@ -54,11 +54,12 @@ jobs: # A basic unit of work in a run
       - run:
           name: Deploy binaries
           command: |
+            git checkout master
             cd Tasmota/build_output/firmware
-            cp * ~/binaries/bin/
+            cp * ~/binaries
             cd ~/binaries
             git config user.name "$USER_NAME"
             git config user.email "$USER_EMAIL"
             git add --all
             git commit --allow-empty -m "Binaries Circle#$CIRCLE_BUILD_NUM [ci skip]"
-            git push 
+            git push origin master
