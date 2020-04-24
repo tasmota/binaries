@@ -951,7 +951,7 @@
 #ifdef USE_SPI
  #define USE_NRF24                              // Add SPI support for NRF24L01(+) (+2k6 code)
   #ifdef USE_NRF24
-    #define USE_MIBLE                            // BLE-bridge for some Mijia-BLE-sensors (+4k7 code)
+    // #define USE_MIBLE                            // BLE-bridge for some Mijia-BLE-sensors (+4k7 code)
   #else
     #ifndef USE_DISPLAY
       #define USE_DISPLAY                        // Add SPI Display support for 320x240 and 480x320 TFT
