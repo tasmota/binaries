@@ -847,9 +847,9 @@
   #define USE_SUNRISE                            // Add support for Sunrise and sunset tools (+16k)
 
 #define USE_RULES                                // Add support for rules (+4k4 code)
-//  #define USE_EXPRESSION                         // Add support for expression evaluation in rules (+3k2 code, +64 bytes mem)
-  //  #define SUPPORT_IF_STATEMENT                 // Add support for IF statement in rules (+4k2 code, -332 bytes mem)
-//  #define SUPPORT_MQTT_EVENT                     // Support trigger event with MQTT subscriptions (+3k5 code)
+ #define USE_EXPRESSION                         // Add support for expression evaluation in rules (+3k2 code, +64 bytes mem)
+   #define SUPPORT_IF_STATEMENT                 // Add support for IF statement in rules (+4k2 code, -332 bytes mem)
+ #define SUPPORT_MQTT_EVENT                     // Support trigger event with MQTT subscriptions (+3k5 code)
 
 //#define USE_SCRIPT                               // Add support for script
   #define USE_SCRIPT_FATFS 4                     // Add support for script storage on SD card (+12k code, +4k mem)
