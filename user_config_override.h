@@ -197,7 +197,6 @@ ooooo     ooo ooooo      ooo oooooooooo.   oooooooooooo oooooooooooo ooooo ooooo
 #undef USE_MAX31865                             // Disable support for MAX31865 RTD sensors using softSPI
 
 // -- IR Remote features --------------------------
-#undef USE_IR_REMOTE_FULL                       // Activate all protocols from IRremoteESP8266 - activating this option will ignore all other USE_IR_REMOTE_* options and set them all to active
 #undef USE_IR_REMOTE                            // Send IR remote commands using library IRremoteESP8266 and ArduinoJson (+4k3 code, 0k3 mem, 48 iram)
   #undef USE_IR_SEND_NEC                        // Support IRsend NEC protocol
   #undef USE_IR_SEND_RC5                        // Support IRsend Philips RC5 protocol
@@ -447,7 +446,6 @@ d'""""""d888' `888'  d8P'  `Y8b   `888'   `Y8b `888'     `8 `888'     `8
 //#define USE_MAX31855                              // Disable MAX31855 K-Type thermocouple sensor using softSPI
 
 // -- IR Remote features --------------------------
-//#define USE_IR_REMOTE_FULL                       // Activate all protocols from IRremoteESP8266 - activating this option will ignore all other USE_IR_REMOTE_* options and set them all to active
 //#define USE_IR_REMOTE                            // Send IR remote commands using library IRremoteESP8266 and ArduinoJson (+4k3 code, 0k3 mem, 48 iram)
   #define USE_IR_SEND_NEC                        // Support IRsend NEC protocol
   #define USE_IR_SEND_RC5                        // Support IRsend Philips RC5 protocol
@@ -1323,7 +1321,6 @@ o8o        o888o o888ooooood8  `Y8bood8P'   o88o     o8888o
 #define USE_MAX31855                              // Disable MAX31855 K-Type thermocouple sensor using softSPI
 
 // -- IR Remote features --------------------------
-// #define USE_IR_REMOTE_FULL                       // Activate all protocols from IRremoteESP8266 - activating this option will ignore all other USE_IR_REMOTE_* options and set them all to active
 #define USE_IR_REMOTE                            // Send IR remote commands using library IRremoteESP8266 and ArduinoJson (+4k3 code, 0k3 mem, 48 iram)
   #define USE_IR_SEND_NEC                        // Support IRsend NEC protocol
   #define USE_IR_SEND_RC5                        // Support IRsend Philips RC5 protocol
@@ -1558,7 +1555,7 @@ o888o        o888ooooood8 o88o     o8888o     o888o     o888o o8o        `8     
 #define USE_MAX31855                              // Disable MAX31855 K-Type thermocouple sensor using softSPI
 
 // -- IR Remote features --------------------------
-#define USE_IR_REMsOTE_FULL                       // Activate all protocols from IRremoteESP8266 - activating this option will ignore all other USE_IR_REMOTE_* options and set them all to active
+// IR Full enabled in Platformio_override.ini
 #define USE_IR_REMOTE                            // Send IR remote commands using library IRremoteESP8266 and ArduinoJson (+4k3 code, 0k3 mem, 48 iram)
   #define USE_IR_SEND_NEC                        // Support IRsend NEC protocol
   #define USE_IR_SEND_RC5                        // Support IRsend Philips RC5 protocol
