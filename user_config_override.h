@@ -1589,6 +1589,9 @@ o888o        o888ooooood8 o88o     o8888o     o888o     o888o o8o        `8     
 
 #define USE_TASMOTA_SLAVE                        // Add support for Arduino Uno/Pro Mini via serial interface including flashing (+2k3 code, 44 mem)
 
+#define USE_THERMOSTAT                           // Add support for the new driver created for thermostat control. #8212
+#define USE_PING                                 // Add support for the PING command. #7176
+
 #endif  // CUSTOM_CONFIG_PLATINUM *******************************************************************
 
 /*********************************************************************************************\
