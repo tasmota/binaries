@@ -569,6 +569,8 @@ oo     .d8P `88b    ooo   888  `88b.   888   888              888       888   8 
 
  #define SUPPORT_MQTT_EVENT                     // Support trigger event with MQTT subscriptions (+3k5 code)
 
+#undef USE_RULES_COMPRESSION // temp fix for unishox compression
+
 #define USE_SCRIPT                               // Add support for script
   #define USE_SCRIPT_JSON_EXPORT
   #define USE_SCRIPT_WEB_DISPLAY
@@ -1589,6 +1591,9 @@ o888o        o888ooooood8 o88o     o8888o     o888o     o888o o8o        `8     
 #define USE_A4988_STEPPER                        // Add support for A4988 stepper-motor-driver-circuit (+10k5 code)
 
 #define USE_TASMOTA_SLAVE                        // Add support for Arduino Uno/Pro Mini via serial interface including flashing (+2k3 code, 44 mem)
+
+#define USE_THERMOSTAT                           // Add support for the new driver created for thermostat control. #8212
+#define USE_PING                                 // Add support for the PING command. #7176
 
 #endif  // CUSTOM_CONFIG_PLATINUM *******************************************************************
 
