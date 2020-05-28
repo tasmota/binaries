@@ -516,15 +516,16 @@ o888bood8P'  o88o     o8888o     o888o         o888o     o888ooooood8 o888o  o88
 #define MQTT_TUYA_RECEIVED     true             // [SetOption66] Enable TuyaMcuReceived messages over Mqtt
 #undef KEY_DISABLE_MULTIPRESS 
 #define KEY_DISABLE_MULTIPRESS true             // [SetOption1]  Disable button multipress
+#undef BOOT_LOOP_OFFSET
+#define BOOT_LOOP_OFFSET       0                 // [SetOption36] Number of boot loops before starting restoring defaults (0 = disable, 1..200 = boot loops offset)
 
 #undef OTA_URL
-#define OTA_URL                "OTA update can brick your device"  // [OtaUrl]
+#define OTA_URL                "OTA update can brick this device"  // [OtaUrl]
 
 #define USE_HOME_ASSISTANT                       // Enable Home Assistant Discovery Support (+7k code)
 #define USE_DOMOTICZ                             // Enable Domoticz (+6k code, +0.3k mem)
 
 #define USE_WEBSERVER                            // Enable web server and Wifi Manager (+66k code, +8k mem)
-  #define USE_JAVASCRIPT_ES6                     // Enable ECMAScript6 syntax using less JavaScript code bytes (fails on IE11)
 
 #define USE_RULES                                // Add support for rules (+4k4 code)
 #define USE_TUYA_MCU                             // Add support for Tuya Serial MCU
