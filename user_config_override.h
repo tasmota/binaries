@@ -506,6 +506,8 @@ o888bood8P'  o88o     o8888o     o888o         o888o     o888ooooood8 o888o  o88
 
 #define MODULE                 TUYA_DIMMER      // [Module] Defined TuyaMCU (54) as default
 
+#define MQTT_CLEAN_SESSION   0                   // Mqtt clean session connection (0 = No clean session, 1 = Clean session (default))
+
 #undef WIFI_SCAN_AT_RESTART                
 #define WIFI_SCAN_AT_RESTART   false             // [SetOption56] Scan wifi network at restart for configured AP's
 #undef WIFI_SCAN_REGULARLY    
