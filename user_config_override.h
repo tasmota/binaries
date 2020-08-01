@@ -571,12 +571,12 @@ oo     .d8P `88b    ooo   888  `88b.   888   888              888       888   8 
 
  #define SUPPORT_MQTT_EVENT                     // Support trigger event with MQTT subscriptions (+3k5 code)
 
-#undef USE_RULES_COMPRESSION // temp fix for unishox compression
+// #undef USE_RULES_COMPRESSION // temp fix for unishox compression
 
 #define USE_SCRIPT                               // Add support for script
   #define USE_SCRIPT_JSON_EXPORT
-  #define USE_SCRIPT_WEB_DISPLAY
-  #define USE_SENDMAIL
+//  #define USE_SCRIPT_WEB_DISPLAY
+//  #define USE_SENDMAIL
   // #define USE_SCRIPT_FATFS 4                     // Add support for script storage on SD card (+12k code, +4k mem)
 
 // -- Optional modules ----------------------------
