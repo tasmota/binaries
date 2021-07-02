@@ -4,9 +4,6 @@
 ### Scripting included instead of rules
 - [tasmota-scripting.bin](https://github.com/tasmota/binaries/raw/master/tasmota-scripting.bin)
 - [tasmota-scripting.bin.gz](https://github.com/tasmota/binaries/raw/master/tasmota-scripting.bin.gz)
-### Zigbee gateway using CC2530 boards. Not for Sonoff ZBBRidge!!!
-- [tasmota-zigbee.bin](https://github.com/tasmota/binaries/raw/master/tasmota-zigbee.bin)
-- [tasmota-zigbee.bin.gz](https://github.com/tasmota/binaries/raw/master/tasmota-zigbee.bin.gz)
 ### Rules with all the features enabled (if...else/and...or and expressions support)
 - [tasmota-fullrules.bin](https://github.com/tasmota/binaries/raw/master/tasmota-fullrules.bin)
 - [tasmota-fullrules.bin.gz](https://github.com/tasmota/binaries/raw/master/tasmota-fullrules.bin.gz)
