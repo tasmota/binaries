@@ -1,1 +1,1 @@
-# MOVED TO [https://github.com/tasmota/install/firmware/unofficial](https://github.com/tasmota/install/firmware/unofficial)
+# MOVED TO [https://github.com/tasmota/install](https://github.com/tasmota/install/tree/main/firmware/unofficial)
